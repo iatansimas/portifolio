@@ -1,0 +1,62 @@
+{% extends "bases/base.html" %}
+
+{% load static %}
+
+
+{% block 'head' %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<link rel="stylesheet" href="{% static 'css/perfil.css' %}">
+{% endblock 'head' %}
+
+
+{% block 'conteudo' %}
+
+<div class="container">
+    <article class="card">
+        <div class='background'>
+            <img src="{% static 'img/iatan.png' %}" alt="profile">
+        </div>
+        <div class='content'>
+            <h2>Iatan Simas</h2>
+            <p>
+                Desenvolvedor Back-End Junior
+
+            </p>
+            <p>Conhecimentos:</p>
+            <ul class="chips">
+                <li class="chip">Python com Django</li>
+                <li class="chip">Oracle</li>
+                <li class="chip">SQLite</li>
+            </ul>
+            <p></p>
+            <ul class="wrapper">
+                <li class="icon facebook">
+                    <span class="tooltip">Facebook</span>
+                    <span><i class="fab fa-facebook-f"></i></span>
+                </li>
+                <li class="icon instagram">
+                    <span class="tooltip">Instagram</span>
+                    <a href="https://www.instagram.com/iatansimas/">
+                        <span><i class="fab fa-instagram"></i></span>
+                    </a>
+                </li>
+                <li class="icon github">
+                    <span class="tooltip">Github</span>
+                    <a href="https://github.com/iatansimas">
+                        <span><i class="fab fa-github"></i></span>
+                    </a>
+                </li>
+            </ul>
+            <div class="action-buttons">
+                <a href="#book-a-mentor">
+                    Book a lector
+                </a>
+                <a href="#learn-more" class="secondary">
+                    Saber mais
+                </a>
+            </div>
+        </div>
+    </article>
+</div>
+
+{% endblock %}
